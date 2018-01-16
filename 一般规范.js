@@ -8,8 +8,9 @@
 资源的字母名称必须全为小写，这是因为在某些对大小写字母敏感的操作系统中，当文件通过工具压缩混淆后，或者人为修改过后，大小写不同而导致引用文件不同的错误，很难被发现。
 还有一些情况下，需要对文件增加前后缀或特定的扩展名（比如 .min.js, .min.css），抑或一串前缀（比如  3fa89b.main.min.css）。这种情况下，建议使用点分隔符来区分这些在文件名中带有清晰意义的元数据。
 
+[1]: Compass 是一个基于 Sass 开源的 CSS 框架，而 Sass 是一个非常流行的 CSS 预编译器。
+
 #不推荐
-(html 代码:)
 MyScript.js
 myCamelCaseName.css
 i_love_underscores.html
@@ -17,7 +18,6 @@ i_love_underscores.html
 my-file-min.css
 
 #推荐
-(html 代码:)
 my-script.js
 my-camel-case-name.css
 i-love-underscores.html
@@ -31,22 +31,18 @@ my-file.min.css
 不指定协议使得 URL 从绝对的获取路径转变为相对的，在请求资源协议无法确定时非常好用，而且还能为文件大小节省几个字节。
 
 #不推荐
-(html 代码:)
 <script src="http://cdn.com/foundation.min.js"></script>
 
 #推荐
-(html 代码:)
 <script src="//cdn.com/foundation.min.js"></script>
 
 
 #不推荐
-(css 代码:)
 .example {
   background: url(http://static.example.com/images/bg.jpg);
 }
 
 #推荐
-(css 代码:)
 .example {
   background: url(//static.example.com/images/bg.jpg);
 }
@@ -55,7 +51,6 @@ my-file.min.css
 3.文本缩进
 一次缩进两个空格。
 
-(html 代码:)
 <ul>
   <li>Fantastic</li>
   <li>Great</li>
@@ -64,14 +59,12 @@ my-file.min.css
   </li>
 </ul>
 
-(css 代码:)
 @media screen and (min-width: 1100px) {
   body {
     font-size: 100%;
   }
 }
 
-(js 代码:)
 (function(){
   var x = 10;
  
@@ -90,8 +83,6 @@ my-file.min.css
 当你写注释时一定要注意：不要写你的代码都干了些什么，而要写你的代码为什么要这么写，背后的考量是什么。当然也可以加入所思考问题或是解决方案的链接地址。
 
 #不推荐
-
-(js 代码:)
 var offset = 0;
 if(includeLabels) {
   // Add offset of 20
@@ -99,8 +90,6 @@ if(includeLabels) {
 }
 
 #推荐
-
-(js 代码:)
 var offset = 0;
 if(includeLabels) {
   // If the labels are included we need to have a minimum offset of 20 pixels
@@ -114,4 +103,3 @@ if(includeLabels) {
 5.代码检查
 对于比较宽松自由的编程语言来说，严格遵循编码规范和格式化风格指南就显得极为重要。遵循规范固然很好，但是有自动化流程来确保其执行情况，岂不更佳。Trust is good, control is better.
 对于 JavaScript，建议使用 JSLint 或 JSHint。
-[1]: Compass 是一个基于 Sass 开源的 CSS 框架，而 Sass 是一个非常流行的 CSS 预编译器。
