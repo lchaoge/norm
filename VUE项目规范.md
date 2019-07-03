@@ -1,6 +1,7 @@
 ## CSS
 ```
 1.自定义样式时  前缀用(wmui)  .wmui-XXX-XXX
+  禁止使用驼峰
 2.使用less
 ```
 
